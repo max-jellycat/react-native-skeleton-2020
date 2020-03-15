@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
 import { registerRootComponent } from 'expo';
 
 import theme from 'styles';
@@ -11,16 +11,16 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: theme.sizings.medium,
     backgroundColor: '#fff',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
 const App = () => {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    </SafeAreaView>
   );
 };
 
